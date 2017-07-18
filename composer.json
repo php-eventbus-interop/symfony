@@ -1,0 +1,41 @@
+{
+  "name": "eventbus-interop/symfony",
+  "description": "Interoperability interface definitions for event buses",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Barney Hanlon",
+      "email": "barney@shrikeh.net"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "eventbus-interop/eventbus-interop": "^0.1.2",
+    "symfony/event-dispatcher": "^3.3",
+    "phpunit/phpunit": "^6.2"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.7",
+    "escapestudios/symfony2-coding-standard": "^2.9",
+    "shrikeh/bounce": "dev-master",
+    "behat/behat": "^3.2@dev"
+  },
+  "autoload": {
+    "psr-4": {
+        "EventIO\\InterOp\\Symfony\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "EventIO\\InterOp\\Symfony\\Test\\": "tests"
+    }
+  },
+  "config": {
+      "bin-dir": "bin"
+  },
+  "minimum-stability": "dev",
+  "archive": {
+      "exclude": ["*", "!/src"]
+  }
+}
